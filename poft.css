@@ -1,0 +1,51 @@
+/* https://s9a.page/tape */
+:root{--tape-filter:none;--tape-bluv:#11dff1;--tape-play:#fbbfff;--tape-loud:#eee833;--tape-luvu:#44f477;--tape-blaq:#0e0e0e;--tape-watt:#e0e0e0;--tape-hex:#e0e0e0;--tape-mix:transparent}.tape-watt{--tape-hex:var(--tape-watt)}.tape-luvu{--tape-hex:var(--tape-luvu)}.tape-loud{--tape-hex:var(--tape-loud)}.tape-play{--tape-hex:var(--tape-play)}.tape-bluv{--tape-hex:var(--tape-bluv)}.tape-flat{border-color:transparent}.tape-flap{border-color:currentColor}.tape-flow{--tape-remix:none}.tape-flow :not(.tape-skip){background-color:transparent;color:inherit}.tape-blaq,.tape-bluv,.tape-loud,.tape-luvu,.tape-play,.tape-watt{--tape-mix:var(--tape-hex);--tape-remix:none;color:var(--tape-blaq)!important;background-color:var(--tape-mix)!important;background-image:var(--tape-remix);filter:var(--tape-filter)}.tape-blaq{--tape-mix:var(--tape-blaq);color:var(--tape-hex)!important}.tape-erase,.tape-erase *{color:transparent!important}
+
+/* play */
+
+:root {
+  --tape-luvu: aquamarine;
+  --tape-blaq: blueviolet;
+}
+
+::selection {
+  background: darkviolet;
+  color: gold;
+}
+
+:focus {
+  outline: .5rem dotted blueviolet;
+}
+
+@media (prefers-contrast: more) {
+  :root { --tape-blaq: midnightblue }
+  ::selection { background: purple }
+  :focus { outline-color: indigo }
+}
+
+.poft {
+  text-shadow:
+    0 1vh 0 darkviolet,
+    0 2vh 0 salmon,
+    -2rem -2rem 2pc magenta,
+    -1rem -1rem 1pc magenta,
+    3rem -3rem 3pc cyan,
+    5rem -5rem 5pc cyan;
+}
+
+.feet {
+  text-shadow:
+    0 1vh 0,
+    0 2vh 0,
+    0 3vh 0 blueviolet,
+    0 5vh 0 darkviolet,
+    0rem 3rem 1pc magenta,
+    0rem 2rem 2pc magenta,
+    0rem 1rem 1pc magenta,
+    0rem 2rem 2pc darkviolet,
+    0rem 3rem 3pc darkviolet,
+    0rem 5rem 3pc darkviolet,
+    0rem 8rem 3pc plum,
+    0rem 8rem 3pc salmon,
+    0rem 8rem 3pc blueviolet;
+}
